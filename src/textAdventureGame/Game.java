@@ -6,6 +6,8 @@ import java.awt.*;
 public class Game {
     JFrame myWindow;
     Container con;
+
+    JPanel titleNamePanel;
     public static void main(String[] args) {
         new Game();
     }
@@ -17,6 +19,11 @@ public class Game {
         myWindow.getContentPane().setBackground(Color.BLACK);
         myWindow.setVisible(true);
         con = myWindow.getContentPane();
+
+        titleNamePanel = new JPanel();
+        titleNamePanel.setBounds(100, 100, 600, 150);
+        titleNamePanel.setBackground(Color.BLUE);
+        con.add(titleNamePanel);
 
     }
 }
